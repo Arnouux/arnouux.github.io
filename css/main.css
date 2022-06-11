@@ -189,7 +189,7 @@ body {
 
 /* Other pages */
 #resume {
-    background-color: var(--color-2);
+    background-color: var(--color-1);
 
 }
 #resume > .wave svg {
@@ -204,7 +204,7 @@ body {
 }
 
 #projects {
-    background-color: var(--color-3);
+    background-color: var(--color-1);
 }
 #projects > .wave .shape-fill {
     fill: var(--color-2);
@@ -218,14 +218,14 @@ body {
 }
 
 #about {
-    background-color: var(--color-4);
+    background-color: var(--color-1);
 }
 #about > .wave .shape-fill {
     fill:var(--color-3);
 }
 
 #contact {
-    background-color: var(--color-5);
+    background-color: var(--color-1);
 }
 #contact > .wave .shape-fill {
     fill: var(--color-4);
