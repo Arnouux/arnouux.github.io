@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <title>Arthur Arnoux</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+
+    <body>
+
+        <header id="header-fixed">
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <ul>
+                <li id="home-btn" class="navigate-btn" href="#home" onclick='goToHome()' selected='true'>Home</li>
+                <li id="resume-btn" class="navigate-btn" href="#resume" onclick='showSelected(this)'>Resume</li>
+                <li class="navigate-btn" href="#projects" onclick='showSelected(this)'>Projects</li>
+                <li class="navigate-btn" href="#about" onclick='showSelected(this)'>About</li>
+                <li class="navigate-btn" href="#contact" onclick='showSelected(this)'>Contact</li>
+            </ul>
+        </header>
+
+        <div id="home" class="block">
+
+            <img src="imgs/me.jpg" alt="Me" id="me">
+
+            <div class="wave-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path onclick='goToResume()' id="svg-continue" fill="white" fill-opacity="0.6" d="M0,224L120,202.7C240,181,480,139,720,138.7C960,139,1200,181,1320,202.7L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+                    <text onclick='goToResume()' id="svg-text" x="700" y="260" font-size="50">Enter</text>
+                </svg>
+                <!-- Hello c: -->
+                
+            </div>
+        </div>
+
+        <div id="resume" class="block">
+            <h1 id="title-resume" class="title-right">Resume</h1>
+
+            <div id="resume-div">
+            <div id="resume-left">
+                <h2>Education</h2>
+                <p>
+                  <b>2021 Automn : EPFL (Ecole Polytechnique Fédérale de Lausanne)</b>
+                          Exchange semester in Switzerland
+                          <a href="subjects.html#epfl">Here are the subjects I had</a>
+                  <b>2019-2021: ENSISA Mulhouse (Ecole Nationale Supérieure d'Ingénieurs Sud Alsace)</b>
+                          Engineering Degree in Computer Science and Software Engineering
+                          <a href="subjects.html#ensisa">Here are the subjects I had</a>
+                  <b>2017-2019: ENSISA Mulhouse</b>
+                          Preparatory classes: two-year undergraduate intensive courses
+                  <b>2017: Baccalauréat S (A level)</b>
+                          Major in maths, Reims
+                </p>
+      
+                <h2>Experiences</h2>
+                <p>
+                  <b>March 2022 - August 2022: Internship at Murex </b>
+                            Java software engineer
+                            Optimization of availability and scalability of a real-time data streaming service
+                            Java, XML, shell, datastreams
+
+                  <b>2021 Summer: Internship at EIFFAGE ENERGIE SYSTEMES - DYNAE </b>
+                          Fullstack engineer on a management web application
+                          POC in Python & Django / Java & Spring Boot / HTML / CSS / JS
+                          PostgreSQL: Database design and queries
+      
+                  <b>2019-2020: Organization of the Engineer Day of ENSISA</b>
+                          Event informing students and promoting the various engineering professions related to
+                          the specializations offered in the school.
+                          Responsible for communication on social networks and in school
+                </p>
+      
+                <h2>Computer Science</h2>
+                <p>
+                  <b>Languages</b>: Python (Tensorflow, Keras, Numpy, Pandas), Java (Spring), Go, C/C++, HTML/CSS
+                  <b>Data</b>: PostgreSQL, MongoDB, Spark, Pentaho
+                  <b>Networks</b>: IP configuration and routing, Cisco Packet Tracer, Wireshark, network programming
+                  <b>Certification</b> Google Digital Active in 2017
+                </p>
+      
+                <p>
+                  <b>Tweets sentiment analysis</b> using a basic n-grams method, neural networks and BERT (Python, Pytorch, NLP)
+                  <b>Privacy Preserving Federated Learning system</b> with nodes sharing encrypted weights to a global model (Go)
+                  <b>Mobile application for task sharing</b> with authentification and database (Project manager, Android)
+                  <b>Price comparator of multiple stores</b> with web-scraping et analysis (Python)
+                  <b>Web application for manual testing management</b> (Java, Maven, Spring)
+                  <b>Cybersecurity</b> : keylogger, from phishing and installation to data return to attacker (VBA, Python)
+                  <b>Study project 2018-2019</b> : Researches in AI on neural networks and image recognition. Development
+                  of a convolutional neural network (Python, Tensorflow/Keras) : chessboard detection and transcription
+                  <b>And more...</b>
+                </p>
+      
+                <h2>Languages</h2>
+                <p>
+                  <b>French</b>: Native
+                  <b>English</b>: C1 level (fluent), TOEIC 970 points.
+                  <b>German</b>: B1 level (intermediate)
+                </p>
+      
+                <h2>Interests</h2>
+                <p>
+                  Passionate about Artificial Intelligence, IoT, data security, technology watch in those domains.
+                  ENSISA's computer club, programming nights, network games in team in LAN.
+                </p>
+      
+                <h2>Hobbies</h2>
+                <p>
+                  Badminton in club, reading, travelling (Canada, Indonesia, England)
+                </p>
+                
+                <p class="last"></p>
+            </div>
+            
+            <div id="resume-right">
+                <p>
+                    Arthur Arnoux
+                    56 rue de la Pompe, 75116 Paris
+                    February 24th, 1999
+        
+                    Phone  : +33 6 10 40 43 11
+                    E-mail : arthur.arnoux@gmx.fr
+                    <a href="https://github.com/arnouux">Github</a>
+                    <a href="https://www.linkedin.com/in/arthur-arnoux/">LinkedIn</a>
+                    <input type="image" src="imgs/arrow.png" alt="Up" id="arrow_up", disabled=true onclick="goUp()">
+                    <input type="image" src="imgs/arrow.png" alt="Down" id="arrow_down" onclick="goDown()">
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div id="projects" class="block">
+
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h1 id="title-projects" class="title-right">My Projects</h1>
+
+            <div class="photo-grid">
+                <div
+                  class="card card-tall card-wide"
+                  style="background-image:url('imgs/projects/1.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project1'))"
+                >
+                </div>
+                <div
+                  class="card card-tall card-wide"
+                  style="background-image:url('imgs/projects/2.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project2'))"            
+                >
+                </div>
+                <div
+                  class="card card-tall"
+                  style="background-image:url('imgs/projects/3.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project3'))"            
+                >
+                </div>
+                <div
+                  class="card card-wide"
+                  style="background-image:url('imgs/projects/4.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project4'))"            
+                >
+                </div>
+                <div
+                  class="card"
+                  style="background-image:url('imgs/projects/5.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project5'))"            
+                >
+                </div>
+                <div
+                  class="card card-wide card-tall"
+                  style="background-image:url('imgs/projects/6.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project6'))"            
+                >
+                </div>
+                <div
+                  class="card card-wide"
+                  style="background-image:url('imgs/projects/7.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project7'))"            
+                >
+                </div>
+                <div
+                  class="card"
+                  style="background-image:url('imgs/projects/8.png');
+                  background-size: cover;"
+                  onclick="functionShow(document.getElementById('project8'))"            
+                >
+                </div>
+    
+            </div>
+            <div id="overlay" onclick="functionShow()"></div>
+            <div id="project1" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>Chessboard recognition with convolutional neural network</h2>
+            <h3>Creating a full dataset, training a neural network</h3>
+            <div class="right">
+                <img src="imgs/projects/1.png" alt="project1" width="400", height="400">
+            </div>
+            <div class="left">
+            <p class="project_p">
+        <a href="https://github.com/Arnouux/Chess_recognition">GitHub of the project</a>
+        The program has 4 steps as we can see on the picture.
+                <ol class="list_project">
+                    <li>Take a photo of the current chessboard.
+        Using the chessboard from the dataset
+                    </li>
+                    <li>Resize the photo to a perfect square on the chessboard.
+        Using another project available on github, using heatmap to replace the board correctly.
+                    </li>
+                    <li>Using a convolutional neural network to get the class of the piece on every cells.
+        Cut the board in 64 cells thanks to the perfect square.
+        Get the piece on every cells.
+        Allow the user to modify a piece if one is uncorrect (>99% accuracy).
+                    </li>
+                    <li>Use an API to ask one of the best AI which move to play.
+        Translate the board from a 2D array to Forsyth–Edwards Notation (FEN) so that Stockfish's api can understand.
+        Receive information and propose to the user the best move.
+                    </li>
+                </ol>
+            </p>
+            <p>
+Technologies:
+Python (Keras & Tensorflow)
+            </p>
+            </div>
+            
+            </div>
+            <div id="project2" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>Neural networks and genetic algorithms</h2>
+            <div class="right">
+                <img src="imgs/projects/2.png" alt="project1" width="400", height="400">
+            </div>
+            <div class="left">
+                <p class="project_p">
+                <a href="https://github.com/Arnouux/GA_NN">GitHub of the project</a>
+
+This project combines neural networks (NNs) to genetic algorithms, in a 2D car race environnement.
+Here, NNs don't learn by backpropagation according to their errors. Instead, a lot of generations of NNs are created and a genetic algorithm makes the best ones pass to the next generation.
+Hence, step by step, we find good architectures and parameters for the NN.
+
+Steps for the genetic algorithm:
+<ol>
+    <li>Creation of the generation</li>
+    <li>Selection of the bests, accorgind to a fitness function calculator (here the distance traveled by the car + checkpoints to avoid turning around)</li>
+    <li>Crossover: swap randomly selected neurons from 2 NNs</li>
+    <li>Mutation: change some randomly selected parameters in a NN</li>
+</ol>
+                </p>
+                <p>
+Technologies:
+Python (No ML framework, Pygame)
+                </p>
+            </div>
+            </div>
+
+            <div id="project3" class="project">
+                <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+                <h2>Price comparator of multiple stores</h2>
+                <h3>Web-scraping and analysis</h3>
+                <div class="right">
+                    <img src="imgs/projects/3.png" alt="project1" width="400", height="400">
+                </div>
+                <div class="left">
+                    <p class="project_p">
+Creation of a dashboard showing all the data scraped by Python scripts.
+It can then analyze and output the best prices of a store for every item, or best mean prices.
+It also shows the evolution over every scraping on graphs.
+
+Technologies:
+Python (Requests, BeautifulSoup4, Selenium, Pandas & matplotlib)
+
+                    </p>
+                </div>
+            </div>
+
+            <div id="project4" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>End-to-end encrypted messaging application</h2>
+            <h3>Cryptography and java</h3>
+            <div class="right">
+                <img src="imgs/projects/4.png" alt="project1" width="400", height="200">
+            </div>
+            <div class="left">
+                <p class="project_p">
+                <a href="https://github.com/Arnouux/Encryption">GitHub of the project</a>
+The project was about creating an end-to-end encrypted messaging application, meaning the server sending the messages from one user to another has no way to read the content of it.
+The application uses an hybrid encryption, because decrypting a message with a symmetric key is faster than with an asymmetric key.
+The clients then have to share a secret key :
+<ul>
+    <li>On registration, clients are creating a public/private key pair (Asymmetric encryption)</li>
+    <li>Client 1 wants to send a message to client 2</li>
+    <li>Server sends to client 1 the public key of client 2</li>
+    <li>Client 1 generates a secret key (Symmetric encryption) and sends it with the message encrypted with the public key of client 2</li>
+    <li>Client 2 uses their private key to decrypt the message using the secret key</li>
+    <li>Of course, at no moment the server can decrypt the messages</li>
+</ul>
+                </p>
+                <p>
+Technologies:
+Java, keystores & certificates, Bouncycastle, multithreading
+                </p>
+            </div>
+            </div>
+
+            <div id="project5" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>Keylogger</h2>
+            <h3>Cybersecurity and python</h3>
+            <div class="right">
+                <img src="imgs/projects/5.png" alt="project1" width="400", height="400">
+            </div>
+            <div class="left">
+                <p class="project_p">
+                
+                    <a href="https://github.com/Arnouux/KeyLogger">GitHub of the project</a>
+The project covers a cybersecurity threat : keyloggers
+After getting it installed on the victim's computer by hiding an automatic download and installation in an Excel file, the keylogger is ran as soon as it is installed or the computer is started.
+With a python script transformed in an executable file, every key input by the user is saved and sent to a web as a POST request for the attacker to collect the data.
+There also is a script that transform the entered keys automatically, for example:
+ShiftDown+A+ShiftDown -> A
+A+ArrowLeft+B -> BA
+
+Technologies:
+VBA, Python, regex
+                </p>
+            </div>
+            </div>
+
+            <div id="project6" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>Pathfinding visualization</h2>
+            <div class="right">
+                <img src="imgs/projects/6.png" alt="project1" width="400", height="400">
+            </div>
+            <div class="left">
+                <p class="project_p">
+                
+                    <a href="https://github.com/Arnouux/Pathfinder">GitHub of the project</a>
+Simple project relying on path finding algorithms (such as A*), or maze generation algorithm.
+A visual reprensentation in a GUI is proposed, so we can clearly see the algorithms finding the way to the desired point.
+
+Technologies:
+Java (Swing)
+
+                </p>
+            </div>
+            </div>
+
+            <div id="project7" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>Unity</h2>
+            <div class="right">
+                <img src="imgs/projects/7.png" alt="project1" width="400", height="200">
+            </div>
+            <div class="left">
+                <p class="project_p">
+A school project in which a robotic arm had to be represented in Unity.
+It can rotate over 3 axes (movable through sliders) and has a pen at its end to draw on a board.
+It also handles collisions so it can play with a ball to try and make a goal.
+
+Technologies:
+Unity
+                </p>
+            </div>
+            </div>
+            <div id="project8" class="project">
+            <img src="imgs/cross.png" alt="close" id="close" width="30", height="30" onclick="functionShow()">
+            <h2>KeySearch</h2>
+            <h3>Cryptography, keystores and java</h3>
+            <div class="right">
+                <img src="imgs/projects/8.png" alt="project1" width="400", height="400">
+            </div>
+            <div class="left">
+                <p class="project_p">
+                    <a href="https://github.com/Arnouux/KeySearch">GitHub of the project</a>
+The project was about managing key stores and RSA, DSA, ECDSA keys.
+The program has 3 mains purposes:
+<ul>
+    <li>Check for the corresponding certificate in a keystore when the user enters a key</li>
+    <li>Check for the corresponding certificate in a keystore when the user enters a Distinguished Name</li>
+    <li>Check for a private key from multiple files input that matches a certificate</li>
+</ul>
+</p>
+<p>
+In the end, the user can always save the certificate/key in a file or a keystore.
+
+Technologies:
+Java (Bouncycastle, Swing)
+                </p>
+            </div>
+            </div>
+        </div>
+
+        <div id="about" class="block">
+
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h1 id="title-about" class="title-right">About me</h1>
+            <p id="p-about-me">
+<b>My name is Arthur Arnoux and I am a Computer Science engineer.</b>
+
+<b>Early life</b>
+I was born in Reims in France (region of Champagne) in 1999, and stayed there for 18 years.
+I am an only child so calm by nature. Moreover, I can easily stay focused on my tasks and I am well organised.
+I have always been interested in sciences, and mostly computer science, and started really focusing on that probably when I was around 16-17 years old.
+
+<b>Studies</b>
+I started my studies in an engineering school in Mulhouse, France. The first two years where about general sciences (Maths, physics, chemistry, ...).
+After passing those two years, I became a Computer Science major. It was a very general formation, during which I learned about a lot of fields in computer science.
+However, the ones I have been interested in for a few years now were (and still are!) data science, Machine Learning, Business Intelligence and cybersecurity.
+During the last year of my studies, I am doing an Erasmus exchange in EPFL in Lausanne, Switzerland.
+This time I have the opportunity to choose the courses I will attend and decided to focus more on those I am interested in.
+
+<b>Hobbies</b>
+My favorite sport is badminton, but I enjoy some other team sports like handball.
+I also like playing video games, and did it more or less competitively for some years, playing in some tournaments.
+When not coding or playing, I do spend time reading, watching series, or going out with friends.
+            </p>
+            <img src="imgs/epfl.jpg" alt="project1" height="400" style="border-radius: 20px;" title="Hi :)">
+        </div>
+
+        <div id="contact" class="block">
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+            <h1 id="title-contact" class="title-right">What now ?</h1>
+            <h3 id="contact-title">For now, I am listening for first job opportunities for a role as</h3>
+            <h2 id="role">Data / Machine Learning engineer</h2>
+            <h3>Don't hesitate to contact me on LinkedIn or via email !</h3>
+        </div>
+
+    </body>
+
+    <script>
+        const contactForm = document.getElementById("contact-form");
+        let name = document.getElementById("contact-name");
+        let email = document.getElementById("contact-email");
+        let message = document.getElementById("contact-message");
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            let formData = {
+                name: name.value,
+                email: email.value,
+                message: message.value
+            }
+
+            let xhr = new XMLHttpRequest();
+            xhr.open('POST', '/');
+            xhr.setRequestHeader('content-type', 'application/json');
+            xhr.onload = function() {
+                console.log(xhr.responseText);
+                if(xhr.responseText == 'success') {
+                    alert('Thank you, your message will be read shortly.');
+                    name.value = '';
+                    email.value = '';
+                    message.value = '';
+                } else {
+                    alert('Something went wrong!');
+                }
+            }
+            xhr.send(JSON.stringify(formData));
+        })
+    </script>
+
+    <script>
+        function showSelected(e) {
+            console.log(e.getAttribute("href"));
+            btns = document.getElementsByClassName("navigate-btn");
+            for (i = 0; i < btns.length; i++) {
+                btns[i].setAttribute("selected", false);
+            }
+            e.setAttribute("selected", true);
+
+            // get href (eg: #home) and remove '#' to scroll to wanted block
+            var strSelected = e.getAttribute("href").substring(1)
+            document.getElementById(strSelected).scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+
+            // Set 'continue' svg to blue fo smooth transition
+            document.getElementById("svg-continue").setAttribute("fill", "#3DCCC7");
+            document.getElementById("svg-continue").setAttribute("fill-opacity", "1");
+            
+            
+            translateTitle(strSelected);
+
+            setTimeout(function(){
+                e.style.transitionDuration='1s';
+                e.setAttribute("fill", "white");
+                e.setAttribute("fill-opacity", "0.6");
+            },1);
+            
+        }
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function goToResume() {
+            btns = document.getElementsByClassName("navigate-btn");
+            for (i = 0; i < btns.length; i++) {
+                btns[i].setAttribute("selected", false);
+            }
+            translateTitle("resume");
+            document.getElementById("resume-btn").setAttribute("selected", true);
+            document.getElementById("svg-continue").setAttribute("fill", "#3DCCC7");
+            document.getElementById("svg-continue").setAttribute("fill-opacity", "1");
+            document.getElementById("resume").scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+        }
+
+        function goToHome() {
+            btns = document.getElementsByClassName("navigate-btn");
+            for (i = 0; i < btns.length; i++) {
+                btns[i].setAttribute("selected", false);
+            }
+            document.getElementById("home-btn").setAttribute("selected", true);
+            document.getElementById("home").scrollIntoView({
+                block: 'start',
+                behavior: 'smooth'
+            });
+            sleep(1000).then(() => {
+                e = document.getElementById("svg-continue")
+                setTimeout(function(){
+                    e.style.transitionDuration='1s';
+                    e.setAttribute("fill", "#c4fff9");
+                    e.setAttribute("fill-opacity", "0.6");
+                },1);
+            });
+        }
+
+        function translateTitle(id) {
+            title = document.getElementById("title-"+id);
+            title.animate([
+                // keyframes
+                { transform: 'translateX(300px)' },
+                { transform: 'translateX(0px)' }
+            ], {
+                easing: 'cubic-bezier(0.42, 0, 0.58, 1)',
+                duration: 1500
+            });
+            title.style.zIndex = 10000;
+        }
+    </script>
+
+    <!-- Resume arrows -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#resume-left").on('scroll', function() {
+            if($("#resume-left").scrollTop() + $("#resume-left").innerHeight() >= $("#resume-left")[0].scrollHeight -1) {
+                document.getElementById("arrow_down").style.filter = "invert(50%)";
+                document.getElementById("arrow_down").disabled = true;
+            } else {
+                document.getElementById("arrow_down").style.filter = "invert(0%)";
+                document.getElementById("arrow_down").disabled = false;
+            }
+
+            
+            if($("#resume-left").scrollTop() == 0) {
+                document.getElementById("arrow_up").style.filter = "invert(50%)";
+                document.getElementById("arrow_up").disabled = true;
+            } else {
+                document.getElementById("arrow_up").style.filter = "invert(0%)";
+                document.getElementById("arrow_up").disabled = false;
+            }
+        });
+        function goUp() {
+            $("#resume-left").animate({ scrollTop: 0 }, 'normal');
+        }
+        function goDown() {
+            $("#resume-left").animate({ scrollTop: $('.last').offset().top + $('.last').outerHeight() - window.innerHeight +1 }, 'slow');
+        }
+    </script>
+
+    <!-- Projects -->
+    <script>
+        function functionShow(y){
+          var overlay = document.getElementById('overlay');
+          if (y !== undefined) {
+            console.log(y);
+            if(y.style.display == '' || y.style.display == 'none'){
+              y.style.display = 'block';
+              overlay.style.display = 'block';
+            }
+            else {
+              y.style.display = 'none';
+              overlay.style.display = 'none';
+            }
+          } else {
+              overlay.style.display = 'none';
+              var projects = document.getElementsByClassName('project');
+              for(let i = 0; i < projects.length; i++) {
+                projects[i].style.display = 'none';
+              }
+          }
+  
+        }
+      </script>
+</html>
